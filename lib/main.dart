@@ -9,9 +9,22 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+        return MaterialApp(
       home: Scaffold(
-        body: Center(
+        appBar: AppBar(
+          title: Text('Лабораторная работа №2, Ошлаков Данил ИВТ-22'),
+        ),
+        body: lab2(),
+      ),
+    );
+
+  }
+}
+
+class lab2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
           child: Stack(
             alignment: Alignment.center,
             children: [
@@ -24,8 +37,6 @@ class MainApp extends StatelessWidget {
               Container(color: Colors.purple, height: 100, width: 100),
             ],
           )
-        ),
-      ),
     );
   }
 }
